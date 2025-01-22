@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sampah Beruang - Beranda</title>
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <meta property="og:title" content="Sampah Beruang" />
+  <meta property="og:description" content="Solusi bagi masalah sampah dengan mengubahnya menjadi produk bernilai" />
+  <meta property="og:image" content="img/logo.png" />
+  <meta property="og:url" content="/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sampah Beruang" />
+  <meta property="og:locale" content="id_ID" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/comWa/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body{
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+    .hero-bg {
+      background-image: url('/img/bg.jpg'); 
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body class="font-poppins antialiased text-gray-900 bg-green-100">
+
+  <!-- Navbar -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-green-950 shadow-2xl w-full transition-all duration-300 ease-in-out">
+    <nav class="container mx-auto flex items-center justify-between p-2">
+      <div class="flex items-center">
+        <!-- Logo -->
+        <img src="img/logo.png" alt="Logo" class="w-24 md:w-44">
+      </div>
+      
+      <!-- Menu Button for Mobile -->
+      <button id="menu-button" class="p-4 text-white text-xl bg-green-950 rounded-md md:hidden">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <!-- Desktop Navbar Links -->
+      <div class="hidden md:flex space-x-6 font-semibold">
+        <a href="/" class="text-lg text-white hover:text-teal-700">Beranda</a>
+        <!-- <a href="#articles" class="text-lg text-white hover:text-teal-700">Artikel</a> -->
+        <a href="#faq" class="text-lg text-white hover:text-teal-700">FAQ</a>
+        <a href="#contact" class="text-lg text-white hover:text-teal-700">Kontak</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Offcanvas Navbar (Mobile only) -->
+  <div id="offcanvas" class="fixed inset-0 bg-gray-800 bg-opacity-50 z-50 hidden">
+    <div class="absolute top-0 right-0 h-full bg-white w-64 transform translate-x-full transition-transform duration-300 ease-in-out" id="offcanvas-content">
+      <div class="flex justify-between p-4">
+        <span class="text-xl font-semibold">Menu</span>
+        <button id="close-button" class="text-xl">&times;</button>
+      </div>
+      <ul class="p-4 space-y-4">
+        <li><a href="/" class="block text-lg text-gray-700 hover:text-teal-700">Beranda</a></li>
+        <!-- <li><a href="#articles" class="block text-lg text-gray-700 hover:text-teal-700">Artikel</a></li> -->
+        <li><a href="#faq" class="block text-lg text-gray-700 hover:text-teal-700">FAQ</a></li>
+        <li><a href="#contact" class="block text-lg text-gray-700 hover:text-teal-700">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- Hero Section -->
+  <section class=" hero-bg h-screen flex items-center text-white relative">
+    <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+    <div class="pt-60 relative z-10 flex justify-start items-center px-4 md:px-16 ">
+      <div class="">
+        <h1 class="md:text-5xl text-3xl font-bold mb-4">Transforming <span class="text-green-600">Waste</span> into Worth!</h1>
+        <p class="mb-8 md:text-lg text-sm font-semibold">Kami mengubah limbah menjadi peluang dengan memanfaatkan teknologi budidaya maggot, eco enzim, dan kerajinan daur ulang, menciptakan nilai sekaligus menjaga kelestarian lingkungan.</p>
+        <a href="#" class="bg-green-800 text-white px-6 py-3 rounded-lg hover:bg-green-900">Mulai Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="flex items-center justify-center md:m-24">
+    <div class="flex flex-col lg:flex-row p-8 w-full max-w-7xl">
+      
+      <!-- Teks di sebelah kanan -->
+      <div class="w-full lg:w-1/2 h-full p-4 md:p-8 flex flex-col justify-center">
+        <h1 class="text-xl md:text-3xl font-semibold text-green-600 mb-4">Produk Ramah Lingkungan untuk Masa Depan Berkelanjutan</h1>
+        <p class="text-gray-800 text-sm md:text-lg mb-6 capitalize">
+          Sampah Beruang adalah inisiatif lingkungan yang mengubah sampah menjadi produk bernilai dan menyediakan edukasi pengelolaan sampah untuk masyarakat.
+        </p>
+        <a href="tentang.html" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 transition-colors max-w-max">Pelajari lebih Lanjut</a>
+      </div>
+
+      <!-- Gambar di sebelah kiri -->
+      <div class="flex-shrink-0 w-full lg:w-1/2 h-full mb-6 lg:mb-0">
+        <img src="img/1.png" alt="Gambar Produk" class="w-full h-full object-cover rounded-lg">
+      </div>
+
+  
+    </div>
+  </div>
+  
+
+  <div class="flex items-center justify-center md:m-24">
+    <div class="flex flex-col lg:flex-row p-8 w-full max-w-7xl">
+      
+      <!-- Gambar di sebelah kiri -->
+      <div class="flex-shrink-0 w-full lg:w-1/2 h-full mb-6 lg:mb-0">
+        <img src="img/9644854_4194126.jpg" alt="Gambar Produk" class="w-full h-full object-cover rounded-lg">
+      </div>
+      
+      <!-- Teks di sebelah kanan -->
+      <div class="w-full lg:w-1/2 h-full p-4 md:p-8 flex flex-col justify-center">
+        <h1 class="text-xl md:text-3xl font-semibold text-green-600 mb-4">Pilihan Produk Ramah Lingkungan: Dari Maggot hingga Kerajinan Daur Ulang</h1>
+        <p class="text-gray-800 text-sm md:text-lg mb-6 capitalize">
+          Jelajahi produk ramah lingkungan kami, mulai dari budidaya maggot, eco enzim, hingga kerajinan daur ulang. Pilih yang sesuai dengan kebutuhan Anda.
+        </p>
+        <a href="eco-tourism.html" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 transition-colors max-w-max">Pelajari lebih Lanjut</a>
+      </div>
+  
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 py-8">
+    <section id="program-kami" class="mb-16">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-green-600 text-center mb-8">Program Kami</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Program 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="img/program1.jpg" alt="Program 1" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold text-green-700">Kerjasama P5</h3>
+          <p class="text-gray-700 mt-2 text-sm sm:text-base">
+            Kami bekerja sama dengan berbagai pihak dalam Program P5 untuk mengembangkan solusi berkelanjutan yang mendukung keberlanjutan pertanian dan peternakan.
+          </p>
+        </div>
+
+        <!-- Program 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="img/program2.jpg" alt="Program 2" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold text-green-700">Pelatihan Budidaya Maggot</h3>
+          <p class="text-gray-700 mt-2 text-sm sm:text-base">
+            Kami menyelenggarakan pelatihan untuk budidaya maggot, yang dapat menjadi sumber pakan ternak yang ramah lingkungan dan efisien.
+          </p>
+        </div>
+
+        <!-- Program 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="img/program3.jpg" alt="Program 3" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold text-green-700">Pengembangan Komunitas Berkelanjutan</h3>
+          <p class="text-gray-700 mt-2 text-sm sm:text-base">
+            Kami berkomitmen untuk mendukung pengembangan komunitas dengan praktik berkelanjutan yang mempromosikan pelestarian lingkungan.
+          </p>
+        </div>
+
+        <!-- Program 4 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="img/program4.jpg" alt="Program 4" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold text-green-700">Dukungan Komunitas Peternakan dan Pertanian</h3>
+          <p class="text-gray-700 mt-2 text-sm sm:text-base">
+            Kami memberikan dukungan teknis dan sumber daya bagi komunitas peternakan dan pertanian untuk meningkatkan produktivitas dengan metode ramah lingkungan.
+          </p>
+        </div>
+
+        <!-- Program 5 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="img/program5.jpg" alt="Program 5" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold text-green-700">Penyediaan Maggot</h3>
+          <p class="text-gray-700 mt-2 text-sm sm:text-base">
+            Kami menyediakan maggot berkualitas tinggi untuk kebutuhan peternakan sebagai pakan ternak yang ramah lingkungan.
+          </p>
+        </div>
+
+        <!-- Program 6 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="img/program6.jpg" alt="Program 6" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold text-green-700">Pengolahan Sampah Organik</h3>
+          <p class="text-gray-700 mt-2 text-sm sm:text-base">
+            Kami mengembangkan teknologi untuk pengolahan sampah organik yang mendukung pengurangan limbah dan meningkatkan kesadaran lingkungan.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Layanan Kami Section -->
+    <section id="layanan-kami" class="mb-16">
+      <h2 class="text-2xl sm:text-3xl font-semibold text-green-600 text-center mb-8">Layanan Kami</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Layanan 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="img/layanan1.jpg" alt="Layanan 1" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold text-green-700">Konsultasi Lingkungan</h3>
+          <p class="text-gray-700 mt-2 text-sm sm:text-base">
+            Kami menyediakan layanan konsultasi untuk membantu bisnis dan individu dalam beralih ke solusi ramah lingkungan yang lebih berkelanjutan.
+          </p>
+        </div>
+
+        <!-- Layanan 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="img/layanan2.jpg" alt="Layanan 2" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold text-green-700">Pelatihan dan Workshop</h3>
+          <p class="text-gray-700 mt-2 text-sm sm:text-base">
+            Kami menawarkan pelatihan dan workshop untuk meningkatkan pemahaman masyarakat tentang praktik ramah lingkungan dan pengelolaan limbah.
+          </p>
+        </div>
+
+        <!-- Layanan 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="img/layanan3.jpg" alt="Layanan 3" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold text-green-700">Penyuluhan dan Edukasi</h3>
+          <p class="text-gray-700 mt-2 text-sm sm:text-base">
+            Kami menyelenggarakan program edukasi untuk meningkatkan kesadaran masyarakat tentang pentingnya keberlanjutan dan pelestarian lingkungan.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </div>
+  
+  <!-- Artikel -->
+  <section id="articles" class="py-16">
+    <div class="container mx-auto px-6 text-center">
+      <!-- Judul Halaman Artikel -->
+      <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
+        Dapatkan Produk <span class="text-green-700">Daur Ulang</span> Yang Berkualitas
+      </h2>
+  
+      <!-- Grid dengan flex untuk memastikan elemen tetap terpusat -->
+      <div class="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4 justify-items-center">
+        <!-- Produk 1 -->
+        <div class="bg-white rounded-lg shadow-md transform hover:scale-105 transition duration-200 cursor-pointer" onclick="openModal('modal-1')">
+          <img src="img/prod.png" alt="Produk 1" class="w-full h-auto object-cover rounded-t-lg">
+          <div class="p-4">
+            <h3 class="text-base sm:text-lg font-semibold mb-2">Maggot Kering Ekstra Protein (2 kg)</h3>
+          </div>
+        </div>
+  
+        <!-- Produk 2 -->
+        <div class="bg-white rounded-lg shadow-md transform hover:scale-105 transition duration-200 cursor-pointer" onclick="openModal('modal-2')">
+          <img src="img/prod.png" alt="Produk 2" class="w-full h-auto object-cover rounded-t-lg">
+          <div class="p-4">
+            <h3 class="text-base sm:text-lg font-semibold mb-2">Maggot Kering Premium 500 gram</h3>
+          </div>
+        </div>
+  
+        <!-- Produk 3 -->
+        <div class="bg-white rounded-lg shadow-md transform hover:scale-105 transition duration-200 cursor-pointer" onclick="openModal('modal-3')">
+          <img src="img/prod.png" alt="Produk 3" class="w-full h-auto object-cover rounded-t-lg">
+          <div class="p-4">
+            <h3 class="text-base sm:text-lg font-semibold mb-2">Maggot Kering 5 kg</h3>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="bg-white rounded-lg shadow-md transform hover:scale-105 transition duration-200 cursor-pointer" onclick="openModal('modal-4')">
+          <img src="img/prod.png" alt="Produk 3" class="w-full h-auto object-cover rounded-t-lg">
+          <div class="p-4">
+            <h3 class="text-base sm:text-lg font-semibold mb-2">Maggot Kering 1 kg</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal 1 -->
+    <div id="modal-1" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50 flex">
+      <div class="bg-white p-6 rounded-lg shadow-lg w-11/12 md:w-1/3 relative">
+        <h3 class="text-xl font-semibold mb-4">Maggot Kering Ekstra Protein (2 kg)</h3>
+        <p class="text-gray-700 mb-4">Detail produk maggot kering ekstra protein yang dapat digunakan sebagai pakan ternak yang ramah lingkungan dengan kandungan protein tinggi.</p>
+  
+        <!-- Tombol-tombol di bawah modal (seperti contoh yang Anda berikan) -->
+        <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+          <!-- Tombol Tanya ke WhatsApp -->
+          <a href="https://wa.me/6281314640283?text=Halo, saya tertarik dengan produk Maggot Kering Ekstra Protein (2 kg)." 
+             class="inline-flex w-full justify-center rounded-md bg-green-700 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-800 sm:ml-3 sm:w-auto">
+            Tanya ke WhatsApp
+          </a>
+          <!-- Tombol Tutup Modal -->
+          <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto" onclick="closeModal('modal-1')">
+            Tutup
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal 2 -->
+    <div id="modal-2" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50 flex">
+      <div class="bg-white p-6 rounded-lg shadow-lg w-11/12 md:w-1/3 relative">
+        <h3 class="text-xl font-semibold mb-4">Maggot Kering Premium 500 gram</h3>
+        <p class="text-gray-700 mb-4">Produk premium dengan kualitas terbaik, melalui proses pengeringan yang menjaga kandungan protein, lemak sehat, dan nutrisi alami maggot. Cocok digunakan untuk reptil peliharaan, burung hias, atau hewan eksotis lainnya yang membutuhkan pakan bernutrisi tinggi. Kemasan praktis untuk penggunaan harian</p>
+  
+        <!-- Tombol-tombol di bawah modal (seperti contoh yang Anda berikan) -->
+        <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+          <!-- Tombol Tanya ke WhatsApp -->
+          <a href="https://wa.me/6281314640283?text=Halo, saya tertarik dengan produk Maggot Kering Premium 500 gram." 
+             class="inline-flex w-full justify-center rounded-md bg-green-700 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-800 sm:ml-3 sm:w-auto">
+            Tanya ke WhatsApp
+          </a>
+          <!-- Tombol Tutup Modal -->
+          <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto" onclick="closeModal('modal-2')">
+            Tutup
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal 3 -->
+    <div id="modal-3" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50 flex">
+      <div class="bg-white p-6 rounded-lg shadow-lg w-11/12 md:w-1/3 relative">
+        <h3 class="text-xl font-semibold mb-4">Maggot Kering 5 kg</h3>
+        <p class="text-gray-700 mb-4">Didesain khusus untuk usaha peternakan skala menengah hingga besar. Maggot kering ini menjadi solusi efektif sebagai pakan alternatif yang ramah lingkungan dan kaya nutrisi. Paket hemat ini memberikan harga terbaik untuk kebutuhan pakan dalam jumlah besar.</p>
+  
+        <!-- Tombol-tombol di bawah modal (seperti contoh yang Anda berikan) -->
+        <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+          <!-- Tombol Tanya ke WhatsApp -->
+          <a href="https://wa.me/6281314640283?text=Halo, saya tertarik dengan produk Maggot Kering 5 kg." 
+             class="inline-flex w-full justify-center rounded-md bg-green-700 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-800 sm:ml-3 sm:w-auto">
+            Tanya ke WhatsApp
+          </a>
+          <!-- Tombol Tutup Modal -->
+          <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto" onclick="closeModal('modal-3')">
+            Tutup
+          </button>
+        </div>
+      </div>
+    </div>
+
+        <!-- Modal 3 -->
+    <div id="modal-3" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50 flex">
+      <div class="bg-white p-6 rounded-lg shadow-lg w-11/12 md:w-1/3 relative">
+        <h3 class="text-xl font-semibold mb-4">Maggot Kering 5 kg</h3>
+        <p class="text-gray-700 mb-4">Didesain khusus untuk usaha peternakan skala menengah hingga besar. Maggot kering ini menjadi solusi efektif sebagai pakan alternatif yang ramah lingkungan dan kaya nutrisi. Paket hemat ini memberikan harga terbaik untuk kebutuhan pakan dalam jumlah besar.</p>
+  
+        <!-- Tombol-tombol di bawah modal (seperti contoh yang Anda berikan) -->
+        <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+          <!-- Tombol Tanya ke WhatsApp -->
+          <a href="https://wa.me/6281314640283?text=Halo, saya tertarik dengan produk Maggot Kering 5 kg." 
+             class="inline-flex w-full justify-center rounded-md bg-green-700 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-800 sm:ml-3 sm:w-auto">
+            Tanya ke WhatsApp
+          </a>
+          <!-- Tombol Tutup Modal -->
+          <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto" onclick="closeModal('modal-3')">
+            Tutup
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal-4" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50 flex">
+          <div class="bg-white p-6 rounded-lg shadow-lg w-11/12 md:w-1/3 relative">
+            <h3 class="text-xl font-semibold mb-4">Maggot Kering 1 kg</h3>
+            <p class="text-gray-700 mb-4">Pilihan ekonomis untuk kebutuhan pakan harian Anda. Maggot kering kaya akan protein dan nutrisi, cocok untuk ikan, unggas, serta reptil peliharaan. Dengan proses pengeringan yang higienis, maggot ini tahan lama dan mudah disimpan.</p>
+      
+            <!-- Tombol-tombol di bawah modal (seperti contoh yang Anda berikan) -->
+            <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+              <!-- Tombol Tanya ke WhatsApp -->
+              <a href="https://wa.me/6281314640283?text=Halo, saya tertarik dengan produk Maggot Kering 1 kg." 
+                 class="inline-flex w-full justify-center rounded-md bg-green-700 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-800 sm:ml-3 sm:w-auto">
+                Tanya ke WhatsApp
+              </a>
+              <!-- Tombol Tutup Modal -->
+              <button type="button" class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto" onclick="closeModal('modal-4')">
+                Tutup
+              </button>
+            </div>
+          </div>
+    </div>
+  </section>
+  
+  <!-- FAQ Section -->
+  <section id="faq" class="py-16">
+    <div class="container mx-auto px-8 sm:px-24 text-center">
+      <!-- Title -->
+      <h2 class="text-xl sm:text-3xl font-bold text-gray-900 mb-8">
+        Pertanyaan yang Sering Diajukan (FAQ)
+      </h2>
+
+      <!-- FAQ Accordion -->
+      <div class="space-y-6">
+        <!-- Pertanyaan 1 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <button class="w-full text-left px-6 py-4 bg-gray-100 hover:bg-gray-200 focus:outline-none transition duration-200" onclick="toggleAnswer(0)">
+            <h3 class="text-base sm:text-lg font-semibold text-gray-900">Apa itu produk daur ulang?</h3>
+          </button>
+          <div id="answer-0" class="px-6 py-4 bg-gray-50 hidden">
+            <p class="text-gray-700">Produk daur ulang adalah barang-barang yang dibuat kembali dengan menggunakan bahan-bahan bekas atau sisa-sisa produk yang telah digunakan, yang kemudian diproses menjadi barang baru yang berguna.</p>
+          </div>
+        </div>
+
+        <!-- Pertanyaan 2 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <button class="w-full text-left px-6 py-4 bg-gray-100 hover:bg-gray-200 focus:outline-none transition duration-200" onclick="toggleAnswer(1)">
+            <h3 class="text-base sm:text-lg font-semibold text-gray-900">Bagaimana cara membeli produk di sini?</h3>
+          </button>
+          <div id="answer-1" class="px-6 py-4 bg-gray-50 hidden">
+            <p class="text-gray-700">Anda bisa membeli produk dengan cara menambahkan produk ke keranjang belanja dan melakukan checkout melalui halaman pembayaran kami yang aman.</p>
+          </div>
+        </div>
+
+        <!-- Pertanyaan 3 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <button class="w-full text-left px-6 py-4 bg-gray-100 hover:bg-gray-200 focus:outline-none transition duration-200" onclick="toggleAnswer(2)">
+            <h3 class="text-base sm:text-lg font-semibold text-gray-900">Apakah produk-produk ini ramah lingkungan?</h3>
+          </button>
+          <div id="answer-2" class="px-6 py-4 bg-gray-50 hidden">
+            <p class="text-gray-700">Ya, semua produk yang kami tawarkan adalah hasil daur ulang yang ramah lingkungan, bertujuan untuk mengurangi limbah dan dampak negatif terhadap alam.</p>
+          </div>
+        </div>
+
+        <!-- Pertanyaan 4 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <button class="w-full text-left px-6 py-4 bg-gray-100 hover:bg-gray-200 focus:outline-none transition duration-200" onclick="toggleAnswer(3)">
+            <h3 class="text-base sm:text-lg font-semibold text-gray-900">Apa metode pengiriman yang digunakan?</h3>
+          </button>
+          <div id="answer-3" class="px-6 py-4 bg-gray-50 hidden">
+            <p class="text-gray-700">Kami menggunakan pengiriman standar dengan jasa kurir terpercaya. Estimasi waktu pengiriman akan diinformasikan setelah checkout.</p>
+          </div>
+        </div>
+
+        <!-- Pertanyaan 5 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <button class="w-full text-left px-6 py-4 bg-gray-100 hover:bg-gray-200 focus:outline-none transition duration-200" onclick="toggleAnswer(4)">
+            <h3 class="text-base sm:text-lg font-semibold text-gray-900">Apakah ada garansi untuk produk yang dibeli?</h3>
+          </button>
+          <div id="answer-4" class="px-6 py-4 bg-gray-50 hidden">
+            <p class="text-gray-700">Ya, kami memberikan garansi produk selama 30 hari setelah pembelian jika ada kerusakan atau cacat produk yang disebabkan oleh pihak kami.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak Section dengan Ajakan dan Pop-up Pilihan -->
+  <section id="contact" class="py-16 bg-gradient-to-r from-green-500 to-teal-500 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <!-- Title -->
+      <h2 class="text-lg sm:text-3xl font-bold mb-4">
+        Saatnya Berkolaborasi untuk Masa Depan yang Lebih Baik
+      </h2>
+      
+      <!-- Deskripsi -->
+      <p class="text-sm sm:text-xl mb-8 text-justify">
+        Kami percaya bahwa setiap percakapan adalah langkah menuju perubahan yang positif. Ayo mulai berbicara dengan kami dan temukan bagaimana kita bisa bekerja sama untuk menciptakan solusi yang lebih ramah lingkungan dan berkelanjutan!
+      </p>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300">
+    <div class="container mx-auto px-6 py-10">
+      <!-- Footer Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+  
+        <!-- Logo and Description (Centered on Mobile) -->
+        <div class="text-center md:text-left">
+          <img src="img/logo.png" alt="Logo" class="w-56 mb-4 mx-auto md:mx-0">
+          <p class="text-sm leading-relaxed">
+            Solusi bagi masalah sampah dengan mengubahnya menjadi produk bernilai
+          </p>
+        </div>
+  
+        <!-- Address and Contact (Hidden on Mobile) -->
+        <div class="hidden md:block">
+          <h2 class="font-semibold text-lg mb-3">Kontak Kami</h2>
+          <ul class="space-y-3 text-sm">
+            <li><i class="fas fa-envelope"></i> sampahberuang2024@gmail.com</li>
+            <li><i class="fas fa-map-marker-alt"></i> alamat</li>
+            <li>
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d293.7035519218207!2d112.62647266218119!3d-7.938001232745293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1733549588366!5m2!1sid!2sid" 
+                width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- Quick Links (Hidden on Mobile) -->
+        <div class="hidden md:block">
+          <h2 class="font-semibold text-lg mb-3">Quick Links</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/" class="hover:text-white">Beranda</a></li>
+            <!-- <li><a href="#" class="hover:text-white">Artikel</a></li> -->
+            <li><a href="#faq" class="hover:text-white">FAQ</a></li>
+            <li><a href="#contact" class="hover:text-white">Kontak</a></li>
+          </ul>
+        </div>
+  
+        <!-- Social Media (Centered on Mobile) -->
+        <div class="text-center md:text-left">
+          <h2 class="font-semibold text-lg mb-3">Ikuti Kami</h2>
+          <div class="flex items-center justify-center md:justify-center space-x-6 text-2xl ">
+            <!-- Facebook -->
+            <a href="https://facebook.com/" class="text-gray-300 hover:text-white">
+              <i class="fab fa-facebook fa-lg"></i>
+            </a>
+            
+            <!-- Shopee -->
+            <a href="https://shopee.co.id/" class="hover:opacity-80 flex items-center">
+              <img src="img/shp.png" alt="Shopee" class="w-16">
+            </a>
+            
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/sampahberuang/" class="text-gray-300 hover:text-white">
+              <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            
+            <!-- TikTok -->
+            <a href="#https://www.tiktok.com/@sampah.beruang?_t=8rtB9m9sWC0&_r=1" class="text-gray-300 hover:text-white">
+              <i class="fa-brands fa-tiktok fa-lg"></i>
+            </a>
+          </div>
+        </div>        
+  
+      </div>
+  
+      <!-- Copyright -->
+      <div class="mt-10 border-t border-gray-700 pt-6 text-center">
+        <p class="text-sm">&copy; 2024 Sampah Beruang</p>
+      </div>
+    </div>
+  </footer>
+
+  <!--  -->
+  <input class='chatMenu hidden' id='offchatMenu' type='checkbox'/>
+  <label class='chatButton' for='offchatMenu'>
+    <svg class='svg-1' viewBox='0 0 32 32'>
+      <g>
+        <path d='M16,2A13,13,0,0,0,8,25.23V29a1,1,0,0,0,.51.87A1,1,0,0,0,9,30a1,1,0,0,0,.51-.14l3.65-2.19A12.64,12.64,0,0,0,16,28,13,13,0,0,0,16,2Zm0,24a11.13,11.13,0,0,1-2.76-.36,1,1,0,0,0-.76.11L10,27.23v-2.5a1,1,0,0,0-.42-.81A11,11,0,1,1,16,26Z'></path>
+        <path d='M19.86,15.18a1.9,1.9,0,0,0-2.64,0l-.09.09-1.4-1.4.09-.09a1.86,1.86,0,0,0,0-2.64L14.23,9.55a1.9,1.9,0,0,0-2.64,0l-.8.79a3.56,3.56,0,0,0-.5,3.76,10.64,10.64,0,0,0,2.62,4A8.7,8.7,0,0,0,18.56,21a2.92,2.92,0,0,0,2.1-.79l.79-.8a1.86,1.86,0,0,0,0-2.64Zm-.62,3.61c-.57.58-2.78,0-4.92-2.11a8.88,8.88,0,0,1-2.13-3.21c-.26-.79-.25-1.44,0-1.71l.7-.7,1.4,1.4-.7.7a1,1,0,0,0,0,1.41l2.82,2.82a1,1,0,0,0,1.41,0l.7-.7,1.4,1.4Z'></path>
+      </g>
+    </svg>
+    <svg class='svg-2' viewBox='0 0 512 512'>
+      <path d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3L233.4 256l-68.2 68.2c-6.2 6.2-6.2 16.4 0 22.6 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'></path>
+    </svg>
+  </label>
+  <div class='chatBox'>
+      <div class='chatContent'>
+        <div class='chatHeader'>
+          <img src='img/logo1.png' alt="LOGO" class="border bg-white"/>
+          <div class='chatTitle'>Sampah Beruang <span>Kami Akan Segera Merespon</span></div>
+        </div>
+        <div class='chatText'>
+          <span>Halo, Apa Ada Yang Bisa Kami Bantu?</span>
+          <span class='typing'>...</span>
+        </div>
+      </div>
+      <div class='chatStart'><input type='text' id='chatInput' placeholder='Tulis Pesan'/>
+      <a href='javascript:void;' id='send-it'>Kirim</a>
+      </div>
+  </div>
+  <!--  -->
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/comWa/javascript.js"></script>
+  
+  <script>
+    // JavaScript untuk menambahkan perubahan warna pada navbar saat scroll
+    const navbar = document.getElementById('navbar');
+    const menuButton = document.getElementById('menu-button');
+    const offcanvas = document.getElementById('offcanvas');
+    const closeButton = document.getElementById('close-button');
+    const offcanvasContent = document.getElementById('offcanvas-content');
+    const navbarLinks = navbar.getElementsByTagName('a');
+    const navbarbtn = document.getElementById('menu-button');
+    
+    // Show offcanvas on mobile
+    menuButton.addEventListener('click', () => {
+      offcanvas.classList.remove('hidden');
+      setTimeout(() => {
+        offcanvasContent.classList.remove('translate-x-full');
+      }, 10);
+    });
+
+    // Close offcanvas on mobile
+    closeButton.addEventListener('click', () => {
+      offcanvasContent.classList.add('translate-x-full');
+      setTimeout(() => {
+        offcanvas.classList.add('hidden');
+      }, 300);
+    });
+
+    // Optional: Close offcanvas if clicked outside
+    offcanvas.addEventListener('click', (e) => {
+      if (e.target === offcanvas) {
+        closeButton.click();
+      }
+    });
+
+    // Scroll event to apply blur effect on navbar when scrolling
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 0) {
+        // navbar.classList.add('backdrop-blur-lg', 'bg-green-950', 'shadow-2xl');
+
+        for (let i = 0; i < navbarLinks.length; i++) {
+          navbarLinks[i].classList.remove('text-white');
+          navbarLinks[i].classList.add('text-white');
+        }
+
+        navbarbtn.classList.remove('text-white');
+        navbarbtn.classList.add('text-white');
+      } else {
+        // navbar.classList.remove('backdrop-blur-lg', 'bg-green-950', 'shadow-2xl');
+
+        for (let i = 0; i < navbarLinks.length; i++) {
+          navbarLinks[i].classList.remove('text-white');
+          navbarLinks[i].classList.add('text-white');
+        }
+
+        navbarbtn.classList.remove('text-white');
+        navbarbtn.classList.add('text-white');
+      }
+    });
+
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // Mencegah perilaku default
+
+        const targetElement = document.querySelector(this.getAttribute('href'));
+
+        // Melakukan scroll ke elemen yang dituju dengan efek smooth
+        targetElement.scrollIntoView({
+          behavior: 'smooth',  // Scroll dengan efek smooth
+          block: 'start'       // Tempatkan elemen di bagian atas viewport
+        });
+      });
+    });
+
+    function toggleAnswer(index) {
+      const answer = document.getElementById(`answer-${index}`);
+      if (answer.classList.contains('hidden')) {
+        answer.classList.remove('hidden');
+      } else {
+        answer.classList.add('hidden');
+      }
+    }
+
+    function togglePopup() {
+      const popup = document.getElementById('contact-popup');
+      popup.classList.toggle('hidden');
+    }
+
+    function openModal(modalId) {
+      document.getElementById(modalId).classList.remove('hidden');
+    }
+
+    // Fungsi untuk menutup modal
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.add('hidden');
+    }
+  </script>
+
+</body>
+</html>
